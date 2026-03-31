@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMAQINNOVA SAC - Proyectos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        /* Animaciones */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        
+        .animate-blob { animation: blob 7s infinite; }
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animation-delay-2000 { animation-delay: 2s; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen relative overflow-x-hidden">
+
+    <div class="fixed top-20 left-10 w-96 h-96 bg-emerald-200 rounded-full mix-blend-multiply filter blur-[100px] opacity-40 animate-blob pointer-events-none z-0"></div>
+    <div class="fixed top-40 right-10 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-[100px] opacity-40 animate-blob animation-delay-2000 pointer-events-none z-0"></div>
+
+    <a href="https://wa.me/51939445483" target="_blank" class="fixed bottom-8 right-8 z-[60] bg-emerald-600 text-white p-4 rounded-full shadow-[0_0_15px_rgba(16,185,129,0.5)] hover:bg-emerald-500 hover:shadow-[0_0_25px_rgba(16,185,129,0.8)] transition-all transform hover:-translate-y-2 flex items-center justify-center animate-bounce" title="Escríbenos por WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md py-3 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center group">
+                    <img src="SUMAQINNOVA.png" alt="Sumaqinnova Logo" class="h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105">
+                </a>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="index.html" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Inicio</a>
+                    <a href="nosotros.html" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Nosotros</a>
+                    <a href="servicios.html" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Servicios</a>
+                    <a href="proyectos.html" class="text-slate-900 font-bold border-b-2 border-emerald-400 pb-1">Proyectos</a>
+                    <a href="cadenas.html" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Cadenas</a>
+                    <a href="contacto.html" class="bg-emerald-600 text-white px-7 py-2.5 rounded-full font-bold shadow-[0_0_15px_rgba(16,185,129,0.4)] hover:bg-emerald-500 hover:-translate-y-1 transition-all">Contáctanos</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600 hover:text-emerald-600">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-6 space-y-4 shadow-xl absolute w-full z-40">
+            <a href="index.html" class="block text-lg font-medium text-slate-700">Inicio</a>
+            <a href="nosotros.html" class="block text-lg font-medium text-slate-700">Nosotros</a>
+            <a href="servicios.html" class="block text-lg font-medium text-slate-700">Servicios</a>
+            <a href="proyectos.html" class="block text-lg font-bold text-slate-900 border-l-4 border-emerald-400 pl-2">Proyectos</a>
+            <a href="cadenas.html" class="block text-lg font-medium text-slate-700">Cadenas</a>
+            <a href="contacto.html" class="block text-center bg-emerald-600 text-white py-3 rounded-xl font-bold">Contáctanos</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h1 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4">Nuestros Proyectos y Resultados</h1>
+                <p class="text-slate-500 text-lg font-light max-w-2xl mx-auto">Conoce cómo transformamos el entorno rural a través de proyectos estratégicos, articulación inteligente y apalancamiento de fondos públicos y privados.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <div class="bg-white/80 backdrop-blur-md p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden group reveal">
+                    <div class="overflow-hidden rounded-[1.5rem] mb-6">
+                        <img src="260163.jpg" alt="Agricultura" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-emerald-50 p-2 rounded-xl group-hover:bg-emerald-600 transition-colors">
+                            <i data-lucide="leaf" class="text-emerald-600 w-6 h-6 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors">Financiamiento AGROIDEAS</h3>
+                    </div>
+                    <ul class="space-y-4 text-slate-600 font-light">
+                        <li class="flex"><i data-lucide="check" class="w-5 h-5 text-emerald-500 mr-2 shrink-0 mt-0.5"></i> <span><strong>Planes de Negocio de Adopción de Tecnología:</strong> Ejecutados en cadenas de valor como Leche y derivados lácteos, y Cuyes.</span></li>
+                        <li class="flex"><i data-lucide="check" class="w-5 h-5 text-emerald-500 mr-2 shrink-0 mt-0.5"></i> <span><strong>Plan de Emprendimiento de la Mujer Rural e Indígena:</strong> Implementado exitosamente en la cadena de Cuyes.</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/80 backdrop-blur-md p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden group reveal delay-100">
+                    <div class="overflow-hidden rounded-[1.5rem] mb-6">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" alt="Negocios y Acuerdos" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-emerald-50 p-2 rounded-xl group-hover:bg-emerald-600 transition-colors">
+                            <i data-lucide="briefcase" class="text-emerald-600 w-6 h-6 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors">PROCOMPITE</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4 font-light">Formulación y gestión de proyectos y planes de negocio. Cadenas productivas:</p>
+                    <ul class="space-y-2 text-slate-600 font-light grid grid-cols-2">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> Leche y derivados</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> Cuyes</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> Palta</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> Miel de abeja</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> Café</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> Trucha</li>
+                        <li class="flex items-center col-span-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> Flores y Madera</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/80 backdrop-blur-md p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden group reveal">
+                    <div class="overflow-hidden rounded-[1.5rem] mb-6">
+                        <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=600&q=80" alt="Alianzas Privadas" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-emerald-50 p-2 rounded-xl group-hover:bg-emerald-600 transition-colors">
+                            <i data-lucide="handshake" class="text-emerald-600 w-6 h-6 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors">Fondos Concursables Privados</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4 font-light">Asistencia en Fondos Concursables para Pequeños Proyectos Productivos 2025:</p>
+                    <ul class="space-y-4 text-slate-600 font-light">
+                        <li class="flex"><i data-lucide="check" class="w-5 h-5 text-emerald-500 mr-2 shrink-0 mt-0.5"></i> <span><strong>ECOFLOR Perú (Cajamarca):</strong> Mejoramiento de la producción de Rosas bajo Invernadero con Manejo Orgánico.</span></li>
+                        <li class="flex"><i data-lucide="check" class="w-5 h-5 text-emerald-500 mr-2 shrink-0 mt-0.5"></i> <span><strong>Lácteos Arón:</strong> Incremento de rentabilidad mediante adopción de tecnologías de transformación láctea.</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/80 backdrop-blur-md p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden group reveal delay-100">
+                    <div class="overflow-hidden rounded-[1.5rem] mb-6">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Expedientes Técnicos" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-emerald-50 p-2 rounded-xl group-hover:bg-emerald-600 transition-colors">
+                            <i data-lucide="building" class="text-emerald-600 w-6 h-6 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors">Inversión Pública</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4 font-light">Elaboración de proyectos de apoyo al desarrollo productivo y expedientes técnicos:</p>
+                    <ul class="space-y-3 text-slate-600 font-light">
+                        <li class="flex"><i data-lucide="check" class="w-5 h-5 text-emerald-500 mr-2 shrink-0 mt-0.5"></i> <span><strong>Estudio Definitivo:</strong> Expediente técnico para 8 unidades productoras a nivel nacional (inversión +43 Millones).</span></li>
+                        <li class="flex"><i data-lucide="check" class="w-5 h-5 text-emerald-500 mr-2 shrink-0 mt-0.5"></i> <span><strong>Preinversión (Perfil):</strong> Ganadería lechera en San Miguel, Cajamarca (beneficiando 947 productores).</span></li>
+                        <li class="flex"><i data-lucide="check" class="w-5 h-5 text-emerald-500 mr-2 shrink-0 mt-0.5"></i> <span><strong>Preinversión (Perfil):</strong> Cadena productiva de palta en Cajamarca, Contumazá y San Pablo.</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <img src="SUMAQINNOVA.png" alt="Logo" class="h-16 mx-auto mb-8 brightness-0 invert opacity-40 hover:opacity-100 transition-opacity duration-300">
+            <div class="flex justify-center space-x-8 mb-10">
+                <a href="https://www.facebook.com/profile.php?id=100063650032059" target="_blank" class="hover:text-emerald-400 hover:-translate-y-1 transition-all"><i class="fa-brands fa-facebook text-3xl"></i></a>
+                <a href="https://www.instagram.com/sumaqinnova/" target="_blank" class="hover:text-emerald-400 hover:-translate-y-1 transition-all"><i class="fa-brands fa-instagram text-3xl"></i></a>
+            </div>
+            <p class="text-xs font-light tracking-[0.3em] uppercase">&copy; 2024 Grupo Empresarial Sumaqinnova SAC.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal();
+    </script>
+</body>
+</html>

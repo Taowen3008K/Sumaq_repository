@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMAQINNOVA SAC - Contáctanos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen relative">
+
+    <a href="https://wa.me/51939445483" target="_blank" class="fixed bottom-8 right-8 z-[60] bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-700 transition-all transform hover:scale-110 flex items-center justify-center animate-bounce" title="Escríbenos por WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md py-3 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center group">
+                    <img src="SUMAQINNOVA.png" alt="Sumaqinnova Logo" class="h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105">
+                </a>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="index.html" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Inicio</a>
+                    <a href="nosotros.html" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Nosotros</a>
+                    <a href="servicios.html" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Servicios</a>
+                    <a href="proyectos.html" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Proyectos</a>
+                    <a href="cadenas.html" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Cadenas</a>
+                    <a href="contacto.html" class="bg-emerald-600 text-white px-7 py-2.5 rounded-full font-bold hover:bg-emerald-500 transition-all shadow-lg border-none">Contáctanos</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600 hover:text-emerald-600">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-6 space-y-4 shadow-xl absolute w-full">
+            <a href="index.html" class="block text-lg font-medium text-slate-700">Inicio</a>
+            <a href="nosotros.html" class="block text-lg font-medium text-slate-700">Nosotros</a>
+            <a href="servicios.html" class="block text-lg font-medium text-slate-700">Servicios</a>
+            <a href="proyectos.html" class="block text-lg font-medium text-slate-700">Proyectos</a>
+            <a href="cadenas.html" class="block text-lg font-medium text-slate-700">Cadenas</a>
+            <a href="contacto.html" class="block text-center bg-emerald-600 text-white py-3 rounded-xl font-bold">Contáctanos</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="text-center mb-12 reveal active">
+                <h1 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4">Hablemos</h1>
+                <p class="text-slate-500 text-lg font-light">Estamos listos para impulsar tus proyectos y potenciar el desarrollo de tu organización.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 reveal active">
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow">
+                    <div class="bg-emerald-50 p-4 rounded-2xl text-emerald-600 mb-4">
+                        <i data-lucide="mail" class="w-8 h-8"></i>
+                    </div>
+                    <span class="font-bold text-slate-900 text-lg">administracion@sumaqinnova.com</span>
+                    <span class="text-slate-500 text-sm mt-1">Escríbenos en cualquier momento</span>
+                </div>
+
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow">
+                    <div class="bg-emerald-50 p-4 rounded-2xl text-emerald-600 mb-4">
+                        <i data-lucide="phone" class="w-8 h-8"></i>
+                    </div>
+                    <span class="font-bold text-slate-900 text-lg">939 445 483</span>
+                    <span class="text-slate-500 text-sm mt-1">Llámanos para asesoría directa</span>
+                </div>
+
+                <a href="https://www.facebook.com/profile.php?id=100063650032059&locale=es_LA" target="_blank" class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow group">
+                    <div class="bg-emerald-50 p-4 rounded-2xl text-emerald-600 mb-4 group-hover:scale-105 transition-transform flex items-center justify-center w-16 h-16">
+                        <i class="fa-brands fa-facebook text-3xl"></i>
+                    </div>
+                    <span class="font-bold text-slate-900 text-lg">Facebook</span>
+                    <span class="text-slate-500 text-sm mt-1">Grupo Empresarial Sumaqinnova</span>
+                </a>
+
+                <a href="https://www.instagram.com/sumaqinnova/" target="_blank" class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow group">
+                    <div class="bg-emerald-50 p-4 rounded-2xl text-emerald-600 mb-4 group-hover:scale-105 transition-transform flex items-center justify-center w-16 h-16">
+                        <i class="fa-brands fa-instagram text-3xl"></i>
+                    </div>
+                    <span class="font-bold text-slate-900 text-lg">Instagram</span>
+                    <span class="text-slate-500 text-sm mt-1">@sumaqinnova</span>
+                </a>
+            </div>
+<div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 mb-6">
+                <div class="mb-6">
+                    <h3 class="font-black text-2xl text-slate-900 flex items-center gap-3">
+                        <i data-lucide="map-pin" class="text-emerald-600 w-6 h-6"></i> Ubicación
+                    </h3>
+                    <p class="text-slate-500 mt-2 font-light">Ubicados en el corazón de Cajamarca para coordinar proyectos en todo el norte peruano.</p>
+                </div>
+                    <p class="text-slate-900 font-bold text-xl mb-1">Cas. La Zanja, Pulán, Santa Cruz, Cajamarca</p>        
+                </div>       
+                <div class="rounded-2xl overflow-hidden h-[350px] border border-slate-200 shadow-inner">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63316.31566375051!2d-78.54929824213038!3d-7.155921868478465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b244799003324d%3A0xc3f17d848e42b820!2sCajamarca!5e0!3m2!1ses-419!2spe!4v1711150000000!5m2!1ses-419!2spe" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <img src="SUMAQINNOVA.png" alt="Logo" class="h-16 mx-auto mb-8 brightness-0 invert opacity-40">
+            <div class="flex justify-center space-x-8 mb-10">
+                <a href="https://www.facebook.com/profile.php?id=100063650032059" target="_blank" class="hover:text-emerald-400 transition-colors"><i class="fa-brands fa-facebook text-3xl"></i></a>
+                <a href="https://www.instagram.com/sumaqinnova/" target="_blank" class="hover:text-emerald-400 transition-colors"><i class="fa-brands fa-instagram text-3xl"></i></a>
+            </div>
+            <p class="text-xs font-light tracking-[0.3em] uppercase">© 2024 Grupo Empresarial Sumaqinnova SAC.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Menú Móvil
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Animaciones al hacer scroll
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) { 
+                    reveals[i].classList.add("active"); 
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal();
+    </script>
+</body>
+</html>
